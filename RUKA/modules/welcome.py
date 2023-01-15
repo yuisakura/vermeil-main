@@ -55,12 +55,12 @@ VALID_WELCOME_FORMATTERS = [
 ]
 
 
-RUKA_RESP = "https://te.legra.ph/file/918c725fedd1dc7546629.jpg"
-RUKA_DIS_WEL = "https://te.legra.ph/file/5dac11bee50894b3bf0d3.jpg"
-RUKA_OWNER_WEL_IMG = "https://te.legra.ph/file/5643139a70fd89238e6ca.jpg"
-RUKA_WELCOME = "https://te.legra.ph/file/52b423bc8c9886fb03aab.jpg"
-NETWORK_USERNAME = "kazumaclanXD"
-NETWORK_NAME = "Kazuma Clan"
+RUKA_RESP = "https://telegra.ph/file/15fe3ade0d28a007065af.mp4"
+RUKA_DIS_WEL = "https://telegra.ph/file/29bad0067bdc4c31eea45.jpg"
+RUKA_OWNER_WEL_IMG = "https://telegra.ph/file/7b972cf8b3d4381f91ca6.mp4"
+RUKA_WELCOME = "https://telegra.ph/file/29bad0067bdc4c31eea45.jpg"
+NETWORK_USERNAME = "AogiriNetwork"
+NETWORK_NAME = "Aogiri Network"
 
 ENUM_FUNC_MAP = {
     sql.Types.TEXT.value: dispatcher.bot.send_message,
@@ -273,8 +273,8 @@ def new_member(update: Update, context: CallbackContext):
                 continue
 
             elif new_mem.id == 1344242083:
-                update.effective_message.reply_photo(
-                RUKA_RESP, caption= "Ohh damn, Legend Arrives\nHow are you sir",
+                update.effective_message.reply_video(
+                RUKA_RESP, caption= "Behold!! king/literally you/sigma/lord just joined with his personality",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -1049,7 +1049,7 @@ def __chat_settings__(chat_id, user_id):
 HELPABLE = {}
 
 HELP_STRINGS = """
-Hey [{}](tg://user?id={}) your *RUKA* is here! 
+Hey [{}](tg://user?id={}) your *VERMEIL* is here! 
 I Help Admins To Manage Their Groups! 
 Main commands available :
  ➢ /help: PM's you this message.
@@ -1089,7 +1089,7 @@ def help_button(update, context):
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/botslabxd")]]))
+                                       url="t.me/vermeilxsupport")]]))
 
         elif prev_match:
             curr_page = int(prev_match.group(1))
