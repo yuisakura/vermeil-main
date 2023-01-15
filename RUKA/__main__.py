@@ -64,28 +64,26 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 PM_START_TEXT = """
-*Konichiwa {},*
-*I'm RUKA Sakurasawa, I'm A Powerful Group Management Bot.*
-❍ *Owner - @IshikkiAkabane*
+*Konichiwa {}, I'M Vermeil aka Devil of disaster*
+*I'M An Anime Group Management Bot, Built For Weebs.*
 ❍ *Uptime* - {}
 ❍ *Users* - {}
 ❍ *Chats* - {}
 **ᴄʟɪᴄᴋ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ꜰᴏʀ ᴍᴏʀᴇ.**
 """
-
 buttons = [
     [
                         InlineKeyboardButton(
-                             text="➕️ Add RUKA To Your Chat ➕️",
-                             url="https://t.me/RUKAxdbot?startgroup=true"),
+                             text="➕️ Add Vermeil To Your Chat ➕️",
+                             url="https://t.me/VermeilXRobot?startgroup=true"),
                     ],
                    [
                        InlineKeyboardButton(
-                             text="Kazuma Clan",
-                             url="https://t.me/kazumaclanxd"),
+                             text="Support Chat",
+                             url="https://t.me/VermeilXSupport"),
                        InlineKeyboardButton(
                              text="About",
-                             callback_data="RUKA_"),
+                             callback_data="VERMEIL_"),
                    ],
                   [
                         InlineKeyboardButton(
@@ -105,20 +103,19 @@ Lets set a welcome message to welcome new users coming to your group by sending 
 ‣ *Reports*:-\nEnable reporting so that your users can report troublemakers to admins send /reports [on\off] to enable/disable reports.
 """
 
+
 ABOUT2 = """
-*‣ RUKA Support Chats*\nJoin My Support Group/Channel For Reporting Problems And Updates.
+*‣ Vermeil Support Chats*\nJoin My Support Group/Channel For Reporting Problems And Updates.
 """
 
-REPO_TXT = f"""
-*‣ Owner:*
-• [Ishikki Akabane](t.me/ishikki_akabane)
-\n*‣ Note:*
+REPO_TXT = """
+*‣ Note:*
 • If You Want This Bot's Repo You Can Get It From The Button Below.
-• Report Any Kind Of Bugs At [Support](t.me/BotslabXD)
+• Report Any Kind Of Bugs At [Support](t.me/VermeilXSupport)
 """
 
 ABOUT3 = """
-Hello [{}], My name is *RUKA*. A Powerful Telegram Group Management Bot built to help you manage Group easily.
+Hello [{}], My name is *Vermeil*. A Powerful Telegram Group Management Bot built to help you manage Group easily.
 ‣ I can Restrict Users.
 ‣ I can Greet Users with customizable welcome message and even set a group rules
 ‣ I have an advanced Anti-Flood System which will help you to safe group from Spammmer.
@@ -130,8 +127,11 @@ Hello [{}], My name is *RUKA*. A Powerful Telegram Group Management Bot built to
 """
 
 HELP_STRINGS = """
-Heya, I'm HERE!
+Heya, your *Vermeil* is here! 
+I Help Admins To Manage Their Groups! 
 Main commands available :
+ ‣ /help: PM's you this message.
+ ‣ /privacy: to view the privacy policy, and interact with your data.
  ‣ /help <module name>: PM's you info about that module.
  ‣ /settings:
    • in PM: will send you your settings for all supported modules.
@@ -139,16 +139,12 @@ Main commands available :
 For all command use / or !
 """
 
-RUKA_PIC = "https://telegra.ph/file/eedea672a770ec92363bd.jpg"
-
 RUKA_N_IMG = (
   "https://te.legra.ph/file/d49e4321e971e90d2d588.jpg",
   "https://te.legra.ph/file/d49e4321e971e90d2d588.jpg"
 )
 
-RUKA_VID = "https://telegra.ph/file/8d49b6f49362e7778785e.jpg"
-
-PM_PHOTO = "https://te.legra.ph/file/2d75ceb5c898288390b4b.jpg"
+PM_PHOTO = "https://telegra.ph/file/6c208c514992f541486b1.jpg"
 
 RUKA_DISPACHER_PIC = "https://te.legra.ph/file/ab4397a139620f1fc8b20.jpg"
 
