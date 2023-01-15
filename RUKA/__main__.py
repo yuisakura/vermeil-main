@@ -20,7 +20,7 @@ from RUKA import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK, BOT_NAME,
                           SUPPORT_CHAT, dispatcher, StartTime, telethn, updater, pgram, pbot)
 
-#Rewritten by ISHIKKI-AKABANE                         
+#Rewritten by yuisakura                         
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from RUKA.modules import ALL_MODULES

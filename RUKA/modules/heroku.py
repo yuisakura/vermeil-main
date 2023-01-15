@@ -103,7 +103,7 @@ async def variable(var):
             return await m.edit(f"**{variable}**  `is not exists`")
 
 
-@register(pattern="^/usage(?: |$)")  #Ishikki-Akabane
+@register(pattern="^/usage(?: |$)")  #yuisakura
 async def dyno_usage(dyno):
     if dyno.fwd_from:
         return

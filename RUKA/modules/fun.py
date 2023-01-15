@@ -195,7 +195,7 @@ def cosplay(update: Update, context: CallbackContext):
 
 R_IMG = "https://telegra.ph/file/5a07ded9ebce5b693c4ff.jpg"  #DONT REMOVE THIS CREDITS
 TEXT2 = """*‣ REPO OWNER:*
-• [Ishikki Akabane](t.me/ishikki_akabane) (◍•ᴗ•◍)
+• [Kᴀᴢᴜʜᴀ様](t.me/ishikki_akabane) (◍•ᴗ•◍)
 ┈─╌┈─╌┈─╌┈─╌
 My source codes are now public, you can use them for creating your own bot
 Visit @BotsLAbXD if you face any issue related to the bot or for any kind of help
@@ -209,7 +209,7 @@ def repo(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
             [
                 [
-                InlineKeyboardButton(text="Source CODE", url="https://github.com/ishikki-akabane/RUKA"),
+                InlineKeyboardButton(text="Source CODE", url="https://github.com/yuisakura/RUKA"),
                 InlineKeyboardButton(text="DEVELOPER", url="https://t.me/ishikki_akabane")
                 ]
             ]
