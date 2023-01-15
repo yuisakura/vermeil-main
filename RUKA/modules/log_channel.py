@@ -2,7 +2,7 @@ from datetime import datetime
 from functools import wraps
 
 from telegram.ext import CallbackContext
-from RUKA.modules.helper_funcs.decorators import RUKAcmd, RUKAcallback
+from RUKA.modules.helper_funcs.decorators import VERMEILCMD, RUKAcallback
 from RUKA.modules.helper_funcs.misc import is_module_loaded
 from RUKA.modules.language import gs
 
@@ -106,7 +106,7 @@ if is_module_loaded(FILENAME):
                 )
 
 
-    @RUKAcmd(command='logchannel')
+    @VERMEILCMD(command='logchannel')
     @u_admin
     def logging(update: Update, context: CallbackContext):
         bot = context.bot
@@ -126,7 +126,7 @@ if is_module_loaded(FILENAME):
             message.reply_text("No log channel has been set for this group!")
 
 
-    @RUKAcmd(command='setlog')
+    @VERMEILCMD(command='setlog')
     @user_admin(AdminPerms.CAN_CHANGE_INFO)
     def setlog(update: Update, context: CallbackContext):
         bot = context.bot
@@ -169,7 +169,7 @@ if is_module_loaded(FILENAME):
             )
 
 
-    @RUKAcmd(command='unsetlog')
+    @VERMEILCMD(command='unsetlog')
     @user_admin(AdminPerms.CAN_CHANGE_INFO)
     def unsetlog(update: Update, context: CallbackContext):
         bot = context.bot
@@ -227,7 +227,7 @@ else:
         return func
 
 
-@RUKAcmd("logsettings")
+@VERMEILCMD("logsettings")
 @user_admin(AdminPerms.CAN_CHANGE_INFO)
 def log_settings(update: Update, _: CallbackContext):
     chat = update.effective_chat

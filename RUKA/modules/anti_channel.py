@@ -1,5 +1,5 @@
 from telegram.ext.filters import Filters
-from RUKA.modules.helper_funcs.decorators import RUKAcmd, RUKAmsg
+from RUKA.modules.helper_funcs.decorators import VERMEILCMD, RUKAmsg
 from telegram import Update, message
 from telegram.ext import CallbackContext
 from RUKA.modules.helper_funcs.anonymous import user_admin, AdminPerms
@@ -7,7 +7,7 @@ import html
 from RUKA.modules.sql.antichannel_sql import antichannel_status, disable_antichannel, enable_antichannel
 
 
-@RUKAcmd(command="antichannel", group=100)
+@VERMEILCMD(command="antichannel", group=100)
 @user_admin(AdminPerms.CAN_RESTRICT_MEMBERS)
 def set_antichannel(update: Update, context: CallbackContext):
     message = update.effective_message

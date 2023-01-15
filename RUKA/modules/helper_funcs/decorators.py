@@ -25,7 +25,7 @@ class RUKATelegramHandler:
                     self._dispatcher.add_handler(
                         CommandHandler(command, func, filters=filters, run_async=run_async, pass_args=pass_args), group
                     )
-                LOGGER.debug(f"[RUKACMD] Loaded handler {command} for function {func.__name__} in group {group}")
+                LOGGER.debug(f"[VERMEILCMD] Loaded handler {command} for function {func.__name__} in group {group}")
             except TypeError:
                 if can_disable:
                     self._dispatcher.add_handler(
@@ -35,7 +35,7 @@ class RUKATelegramHandler:
                     self._dispatcher.add_handler(
                         CommandHandler(command, func, filters=filters, run_async=run_async, pass_args=pass_args, pass_chat_data=pass_chat_data)
                     )
-                LOGGER.debug(f"[RUKACMD] Loaded handler {command} for function {func.__name__}")
+                LOGGER.debug(f"[VERMEILCMD] Loaded handler {command} for function {func.__name__}")
 
             return func
 
@@ -81,7 +81,7 @@ class RUKATelegramHandler:
             return func
         return _inlinequery
 
-RUKAcmd = RUKATelegramHandler(d).command
+VERMEILCMD = RUKATelegramHandler(d).command
 RUKAmsg = RUKATelegramHandler(d).message
 RUKAcallback = RUKATelegramHandler(d).callbackquery
 RUKAinline = RUKATelegramHandler(d).inlinequery

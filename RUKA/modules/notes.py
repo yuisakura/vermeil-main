@@ -24,7 +24,7 @@ from telegram.ext import (
     Filters,
 )
 
-from RUKA.modules.helper_funcs.decorators import RUKAcmd, RUKAmsg, RUKAcallback
+from RUKA.modules.helper_funcs.decorators import VERMEILCMD, RUKAmsg, RUKAcallback
 
 from ..modules.helper_funcs.anonymous import user_admin, AdminPerms
 
@@ -211,7 +211,7 @@ def get(update, context, notename, show_none=True, no_format=False):
         message.reply_text("This note doesn't exist")
 
 
-@RUKAcmd(command="get")
+@VERMEILCMD(command="get")
 @connection_status
 def cmd_get(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
@@ -248,7 +248,7 @@ def slash_get(update: Update, context: CallbackContext):
     except IndexError:
         update.effective_message.reply_text("Wrong Note ID 😾")
 
-@RUKAcmd(command='save')
+@VERMEILCMD(command='save')
 @user_admin(AdminPerms.CAN_CHANGE_INFO)
 @connection_status
 def save(update: Update, context: CallbackContext):
@@ -290,7 +290,7 @@ def save(update: Update, context: CallbackContext):
             )
         return
 
-@RUKAcmd(command='clear')
+@VERMEILCMD(command='clear')
 @user_admin(AdminPerms.CAN_CHANGE_INFO)
 @connection_status
 def clear(update: Update, context: CallbackContext):
@@ -307,7 +307,7 @@ def clear(update: Update, context: CallbackContext):
         update.effective_message.reply_text("Provide a notename.")
 
 
-@RUKAcmd(command='removeallnotes')
+@VERMEILCMD(command='removeallnotes')
 def clearall(update: Update, context: CallbackContext):
     chat = update.effective_chat
     user = update.effective_user
@@ -366,7 +366,7 @@ def clearall_btn(update: Update, context: CallbackContext):
             query.answer("You need to be admin to do this.")
 
 
-@RUKAcmd(command=["notes", "saved"])
+@VERMEILCMD(command=["notes", "saved"])
 @connection_status
 def list_notes(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id

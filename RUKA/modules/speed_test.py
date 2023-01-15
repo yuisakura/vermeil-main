@@ -3,14 +3,14 @@ from RUKA import DEV_USERS, dispatcher
 from RUKA.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext
-from RUKA.modules.helper_funcs.decorators import RUKAcmd, RUKAcallback
+from RUKA.modules.helper_funcs.decorators import VERMEILCMD, RUKAcallback
 
 
 def convert(speed):
     return round(int(speed) / 1048576, 2)
 
 
-@RUKAcmd(command='speedtest')
+@VERMEILCMD(command='speedtest')
 @dev_plus
 def speedtestxyz(update: Update, context: CallbackContext):
     buttons = [
