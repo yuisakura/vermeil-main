@@ -181,7 +181,7 @@ def stats_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Ruka stats is just for Dev User",
+                "Vermeil stats is just for Dev User",
             )
 
     return is_sudo_plus_func
