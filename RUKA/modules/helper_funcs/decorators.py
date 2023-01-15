@@ -6,7 +6,7 @@ from typing import Optional, Union, List
 
 
 
-class RUKATelegramHandler:
+class VERMEILTelegramHandler:
     def __init__(self, d):
         self._dispatcher = d
 
@@ -81,7 +81,7 @@ class RUKATelegramHandler:
             return func
         return _inlinequery
 
-VERMEILCMD = RUKATelegramHandler(d).command
-RUKAmsg = RUKATelegramHandler(d).message
-RUKAcallback = RUKATelegramHandler(d).callbackquery
-RUKAinline = RUKATelegramHandler(d).inlinequery
+VERMEILCMD = VERMEILTelegramHandler(d).command
+RUKAmsg = VERMEILTelegramHandler(d).message
+RUKAcallback = VERMEILTelegramHandler(d).callbackquery
+RUKAinline = VERMEILTelegramHandler(d).inlinequery
