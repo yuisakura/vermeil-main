@@ -27,8 +27,8 @@ logging.basicConfig(
               logging.StreamHandler()],
     level=logging.INFO)
 
-LOGGER = logging.getLogger("[RUKA]")
-LOGGER.info("CREATED BY: ISHIKKI-AKABANE")
+LOGGER = logging.getLogger("[VERMEIL]")
+LOGGER.info("CREATED BY: THEINERXIA")
 
 log = logging.getLogger('[Your Bot Is DEPLOYING]')
 
@@ -88,7 +88,7 @@ if ENV:
     API_ID = os.environ.get('API_ID', None)
     API_HASH = os.environ.get('API_HASH', None)
     DB_URI = os.environ.get('DATABASE_URL')
-    DONATION_LINK = os.environ.get('DONATION_LINK', "https//t.me/ishikki_akabane")
+    DONATION_LINK = os.environ.get('DONATION_LINK', "https//t.me/The0mnipotent")
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "").split()
     DEL_CMDS = bool(os.environ.get('DEL_CMDS', False))
@@ -101,17 +101,17 @@ if ENV:
     TIME_API_KEY = os.environ.get('TIME_API_KEY', None)
     AI_API_KEY = os.environ.get('AI_API_KEY', None)
     WALL_API = os.environ.get('WALL_API', None)
-    SUPPORT_CHAT = os.environ.get('SUPPORT_CHAT', "BotsLAbXD")
-    SPAMWATCH_SUPPORT_CHAT = os.environ.get('SPAMWATCH_SUPPORT_CHAT', "BotsLAb")
+    SUPPORT_CHAT = os.environ.get('SUPPORT_CHAT', "VERMEILXSUPPORT")
+    SPAMWATCH_SUPPORT_CHAT = os.environ.get('SPAMWATCH_SUPPORT_CHAT', "VERMEILXSUPPORT")
     SPAMWATCH_API = os.environ.get('SPAMWATCH_API', "XChWQMRDLpKVqoirR_cMDqlrGwiTn1bY1pYhTyGeVv7~T2gVG1JRyZFvlZGq4gtG")
     BANCODES = os.environ.get("BANCODES", "You want me to ban the person who created my codes! ARE YOU CRAZY!!!!")
-    REPOSITORY = os.environ.get("REPOSITORY", "https://github.com/Ishikki-Akabane/RUKA")
+    REPOSITORY = os.environ.get("REPOSITORY", "https://github.com/yuisakura/vermeil-main")
     IBM_WATSON_CRED_URL = os.environ.get("IBM_WATSON_CRED_URL", None)
     IBM_WATSON_CRED_PASSWORD = os.environ.get("IBM_WATSON_CRED_PASSWORD", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
-    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "IshikkiAkabane")
+    TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "TheInerxia")
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", "") # From:- https://openweathermap.org/api
     LOG_GROUP_ID = os.environ.get('LOG_GROUP_ID', None)
@@ -123,18 +123,18 @@ if ENV:
     OWNER_NAME = os.environ.get("OWNER_NAME", None)
     COTB = "Ishikki_Akabane"
     UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
-    NETWORK_USERNAME = "KazumaClanXD"
-    NETWORK_NAME = "KAZUMA CLAN"
-    AFKVID = os.environ.get("RUKA_AFKVID", "https://te.legra.ph/file/3e4d749465d63706d70ea.mp4")
-    GROUP_ALIVE_PIC = os.environ.get("RUKA_GROUP_ALIVE_PIC", "https://te.legra.ph/file/69ff2cfadf7ad504449f2.jpg")
-    RUKA_DISPACHER_PIC = os.environ.get("RUKA_DISPACHER_PIC", "https://te.legra.ph/file/ab4397a139620f1fc8b20.jpg")
-    RUKA_HELP_PIC = os.environ.get("RUKA_HELP_PIC", "https://te.legra.ph/file/d49e4321e971e90d2d588.jpg")
-    PM_IMAGE = os.environ.get("RUKA_PM_IMAGE", "https://te.legra.ph/file/2d75ceb5c898288390b4b.jpg")
-    GROUPSTART_VID = os.environ.get("RUKA_GROUPSTART_VID", "https://te.legra.ph/file/0a27889037311e508efdf.mp4")
-    RUKA_OWNER_WEL_IMG = os.environ.get("RUKA_OWNER_WEL_IMG", "https://te.legra.ph/file/f5b41a463bc226291e308.jpg")
-    RUKA_DIS_WEL = os.environ.get("RUKA_DIS_WEL", "https://te.legra.ph/file/574c133b9a41f16808f73.jpg")
-    RUKA_WELCOME = os.environ.get("RUKA_WELCOME", "https://te.legra.ph/file/52b423bc8c9886fb03aab.jpg")
-    RUKA_STATS_PIC = os.environ.get("RUKA_STATS_PIC", "https://te.legra.ph/file/cb81518d97562d5eca417.jpg")
+    NETWORK_USERNAME = "AogiriNetwork"
+    NETWORK_NAME = "Aogiri Network"
+    AFKVID = os.environ.get("RUKA_AFKVID", "https://telegra.ph/file/c0551f89b1bc0e70ebe00.mp4")
+    GROUP_ALIVE_PIC = os.environ.get("RUKA_GROUP_ALIVE_PIC", "https://telegra.ph/file/6c208c514992f541486b1.jpg")
+    RUKA_DISPACHER_PIC = os.environ.get("RUKA_DISPACHER_PIC", "https://telegra.ph/file/6c208c514992f541486b1.jpg")
+    RUKA_HELP_PIC = os.environ.get("RUKA_HELP_PIC", "https://telegra.ph/file/6c208c514992f541486b1.jpg")
+    PM_IMAGE = os.environ.get("RUKA_PM_IMAGE", "https://telegra.ph/file/6c208c514992f541486b1.jpg")
+    GROUPSTART_VID = os.environ.get("RUKA_GROUPSTART_VID", "https://telegra.ph/file/c0551f89b1bc0e70ebe00.mp4")
+    RUKA_OWNER_WEL_IMG = os.environ.get("RUKA_OWNER_WEL_IMG", "https://telegra.ph/file/6c208c514992f541486b1.jpg")
+    RUKA_DIS_WEL = os.environ.get("RUKA_DIS_WEL", "https://telegra.ph/file/6c208c514992f541486b1.jpg")
+    RUKA_WELCOME = os.environ.get("RUKA_WELCOME", "https://telegra.ph/file/6c208c514992f541486b1.jpg")
+    RUKA_STATS_PIC = os.environ.get("RUKA_STATS_PIC", "https://telegra.ph/file/6c208c514992f541486b1.jpg")
 
 
     try:
@@ -235,7 +235,6 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(5030730429)
 
 if not SPAMWATCH_API:
     sw = None
@@ -290,7 +289,7 @@ BOT_NAME = bottie.first_name
 BOT_MENTION = bottie.mention
 
 print(
-    "[RUKA] RUKA Is Starting."
+    "[VERMEIL] VERMEIL Is Starting."
 )
 
 REDIS = StrictRedis.from_url(REDIS_URL, decode_responses=True)
@@ -310,10 +309,10 @@ finally:
    REDIS.ping()
 
 print(
-    "[RUKA] SERVERS Connected SUCCESSFULLY!!"
+    "[VERMEIL] SERVERS Connected SUCCESSFULLY!!"
 )
 print(
-    "[RUKA] INITIALIZING MODULES ERROR!!"
+    "[VERMEIL] INITIALIZING MODULES ERROR!!"
 )
 
 #-------Quote-------

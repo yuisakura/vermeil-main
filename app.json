@@ -1,15 +1,15 @@
 {
    "name": "RUKA",
    "description": "An Advanced Anime themed Telegram group management bot.",
-   "logo": "https://telegra.ph/file/ace91d9ae6af3881d3940.jpg",
+   "logo": "https://telegra.ph/file/6c208c514992f541486b1.jpg",
    "keywords": [
       "telegram",
       "anime",
       "group",
       "manager",
-      "RUKA"
+      "VERMEIL"
    ],   
-"repository": "https://github.com/Ishikki-Akabane/RUKA",
+"repository": "https://github.com/yuisakura/vermeil-main",
 "addons": [
    {
       "options": {
@@ -47,35 +47,35 @@
    "OWNER_ID": {
       "description": "Your user ID as an integer.",
       "required": true,
-      "value": "5030730429"
+      "value": "1344242083"
    },
    "OWNER_USERNAME": {
       "description": "Your username without the @",
-      "value": "Ishikki_AKABANE"
+      "value": "he0mnipotent"
    },
    "OWNER_NAME": {
       "description": "Your Name",
-      "value": "ISHIKKI AKABANE"
+      "value": "Kᴀᴢᴜʜᴀ様"
    },
    "SUPPORT_CHAT": {
       "description": "Your Telegram support group chat username(without @) where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah",
       "required": true,
-      "value": "BotsLabXD"
+      "value": "VermeilXsupport"
    },
    "UPDATE_CHANNEL": {
       "description": "Your Telegram update channel username(without @) where you will give updates about your bot",
       "required": false,
-      "value": "updatesxd"
+      "value": "vermeilxupdates"
    },
    "NETWORK_USERNAME": {
       "description": "Your Network or Community username(without @). IF YOU DONT HAVE ONE, SKIP THIS FIELD",
       "required": false,
-      "value": "KAZUMACLANXD"
+      "value": "AogiriNetwork"
    },
    "NETWORK_NAME": {
       "description": "Your Network or Community name. IF YOU DONT HAVE ONE, SKIP THIS FIELD",
       "required": false,
-      "value": "KAZUMA CLAN"
+      "value": "Aogiri Network"
    },
    "EVENT_LOGS": {
       "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
@@ -105,7 +105,7 @@
    "DEV_USERS": {
       "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother RUKA support then keep the current ID's here at they are and add yours. give spaces between to add multiple id's",
       "required": false,
-      "value": "5030730429"
+      "value": ""
    },
    "sw_api": {
       "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
@@ -124,12 +124,12 @@
    "DRAGONS": {
       "description": "A space separated list of user IDs who you want to assign as sudo users.",
       "required": false,
-      "value": "5030730429"
+      "value": ""
    },
    "DEMONS": {
       "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
       "required": false,
-      "value": "5030730429"
+      "value": ""
    },
    "TIGERS": {
       "description": "A space separated list of user IDs who you wanna assign as tiger users.",
