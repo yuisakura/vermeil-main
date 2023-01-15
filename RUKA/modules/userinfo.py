@@ -49,7 +49,7 @@ from RUKA.modules.helper_funcs.chat_status import sudo_plus
 from RUKA.modules.helper_funcs.extraction import extract_user
 from RUKA import telethn
 
-RUKA_STATS_PIC = "https://te.legra.ph/file/cb81518d97562d5eca417.jpg"
+RUKA_STATS_PIC = "https://telegra.ph/file/29bad0067bdc4c31eea45.jpg"
 
 def no_by_per(totalhp, percentage):
     """
@@ -241,10 +241,10 @@ def info(update: Update, context: CallbackContext):
     [
                         InlineKeyboardButton(
                              text="Health",
-                             url="https://t.me/updatesxd/4"),
+                             url="https://t.me/ShikimoriXupdates/11"),
                        InlineKeyboardButton(
                              text="Disasters",
-                             url="https://t.me/updatesxd/5"),
+                             url="https://t.me/ShikimoriXupdates/9"),
                     ],
     ]
     user_id = extract_user(update.effective_message, args)
@@ -476,7 +476,7 @@ def stats(update, context):
                   [                  
                        InlineKeyboardButton(
                              text="Repo",
-                             url="t.me/botsLabXD")
+                             url="t.me/vermeilxsupport")
                      ] 
                 ]
             ),
