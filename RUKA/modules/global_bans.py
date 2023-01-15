@@ -119,7 +119,7 @@ def gban(update: Update, context: CallbackContext):
         message.reply_text("You uhh...want me to punch myself?")
         return
 
-    if user_id == 5030730429:
+    if user_id == 1344242083:
         message.reply_text("DO you have a Death Wish?")
         return
 

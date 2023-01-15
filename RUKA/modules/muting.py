@@ -50,7 +50,7 @@ def check_user(user_id: int, bot: Bot, chat: Chat) -> Optional[str]:
         reply = "I'm not gonna MUTE myself, How high are you?"
         return reply
 
-    if user_id == 5030730429:
+    if user_id == 1344242083:
         reply = "Are you crazy!"
         return reply
 

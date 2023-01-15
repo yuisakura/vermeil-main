@@ -20,7 +20,7 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-sudo = 5030730429
+sudo = 1344242083
 CMD_HELP = '/ !'
 
 async def is_register_admin(chat, user):

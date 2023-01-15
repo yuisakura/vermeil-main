@@ -100,7 +100,7 @@ def ban(update: Update, context: CallbackContext) -> str:
             message.reply_text("Wolves abilities make them ban immune!")
         elif user_name == {COTB}:
             message.reply_text("{BANCODES}")
-        elif user_id == 5030730429:
+        elif user_id == 1344242083:
             message.reply_text("{BANCODES}")
         else:
             message.reply_text("This user has immunity and cannot be banned.")

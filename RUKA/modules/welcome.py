@@ -272,7 +272,7 @@ def new_member(update: Update, context: CallbackContext):
     )
                 continue
 
-            elif new_mem.id == 5030730429:
+            elif new_mem.id == 1344242083:
                 update.effective_message.reply_photo(
                 RUKA_RESP, caption= "Ohh damn, Legend Arrives\nHow are you sir",
                     reply_to_message_id=reply,
@@ -531,7 +531,7 @@ def left_member(update: Update, context: CallbackContext):
                 )
                 return
             
-            elif left_mem.id == 5030730429:
+            elif left_mem.id == 1344242083:
                 update.effective_message.reply_text(
                     "See you later at the @BotsLabXD!",
                     reply_to_message_id=reply,
