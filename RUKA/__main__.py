@@ -140,13 +140,13 @@ For all command use / or !
 """
 
 RUKA_N_IMG = (
-  "https://te.legra.ph/file/d49e4321e971e90d2d588.jpg",
-  "https://te.legra.ph/file/d49e4321e971e90d2d588.jpg"
+  "https://telegra.ph/file/f7dc12f73e99ceb968999.mp4",
+  "https://telegra.ph/file/7799372b3a14aedf90a41.mp4"
 )
 
-PM_PHOTO = "https://telegra.ph/file/6c208c514992f541486b1.jpg"
+PM_PHOTO = "https://telegra.ph/file/f7dac7bc91f30635db33a.mp4"
 
-RUKA_DISPACHER_PIC = "https://te.legra.ph/file/ab4397a139620f1fc8b20.jpg"
+RUKA_DISPACHER_PIC = "https://telegra.ph/file/6c208c514992f541486b1.jpg"
 
 DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me Though I Would Appreciate If You tell me your honest review about the bot"""
 
@@ -269,7 +269,7 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.full_name
             id = update.effective_user.id
 
-            update.effective_message.reply_photo(
+            update.effective_message.reply_video(
                 photo=(PM_PHOTO),
                 caption=PM_START_TEXT.format(
                     escape_markdown(first_name),
@@ -285,18 +285,18 @@ def start(update: Update, context: CallbackContext):
         first = update.effective_user.full_name
         chat = update.effective_chat.title
         update.effective_message.reply_video(
-                video="https://te.legra.ph/file/0a27889037311e508efdf.mp4",
-                caption="---------------\nMoshi Moshi\nRUKA Speaking!\nI Am Alive and working perfectly fine\nMy Master - @ishikki_akabane\n---------------",
+                video="https://telegra.ph/file/c0551f89b1bc0e70ebe00.mp4",
+                caption="Started!",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
                        InlineKeyboardButton(
                              text="Support",
-                             url="t.me/BotsLabXD"),
+                             url="t.me/VermeilXsupport"),
                        InlineKeyboardButton(
                              text="Updates",
-                             url="t.me/Updatesxd")
+                             url="t.me/VermeilXupdates")
                      ]
                 ]
             ),
@@ -366,7 +366,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="⬅ ʙᴀᴄᴋ", callback_data="help_back"),
-                      InlineKeyboardButton(text="⬅ ʜᴏᴍᴇ", callback_data="RUKA_back")]]
+                      InlineKeyboardButton(text="⬅ ʜᴏᴍᴇ", callback_data="VERMEIL_back")]]
                 ),
             )
 
@@ -413,7 +413,7 @@ def about_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="RUKA_")
+                    InlineKeyboardButton(text="Back", callback_data="VERMEIL_")
                  ],
                 ]
             ),
@@ -427,11 +427,11 @@ def about_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/BotsLAbXD"),
-                    InlineKeyboardButton(text="Updates", url="t.me/Updatesxd"),
+                    InlineKeyboardButton(text="Support", url="t.me/VermeilXsupport"),
+                    InlineKeyboardButton(text="Updates", url="t.me/VermeilXupdates"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="RUKA_")
+                    InlineKeyboardButton(text="Back", callback_data="VERMEIL_")
                  ],
                 ]
             ),
@@ -449,11 +449,11 @@ def repo_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/ishikki-akabane/RUKA"),
-                    InlineKeyboardButton(text="Developer", url="t.me/ishikki_akabane"),
+                    InlineKeyboardButton(text="Source Code", url="https://github.com/YUISAKURA"),
+                    InlineKeyboardButton(text="Developer", url="t.me/The0mnipotent"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="RUKA_")
+                    InlineKeyboardButton(text="Back", callback_data="VERMEIL_")
                  ],
                 ]
             ),
@@ -478,19 +478,19 @@ def RUKA_callback_data(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Guide", callback_data="about_"),
-                    InlineKeyboardButton(text="Developer", url="t.me/ishikki_akabane"),
+                    InlineKeyboardButton(text="Developer", url="t.me/The0mnipotent"),
                  ],
                  [
                     InlineKeyboardButton(text="Support", callback_data="about_"),
                     InlineKeyboardButton(text="Source Code", callback_data="repo_"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="RUKA_back")
+                    InlineKeyboardButton(text="Back", callback_data="VERMEIL_BACK")
                  ],
                 ]
             ),
         )
-    elif query.data == "RUKA_back":
+    elif query.data == "VERMEIL_back":
         first_name = update.effective_user.full_name
         id = update.effective_user.id
         query.message.edit_caption(
@@ -514,7 +514,7 @@ def get_help(update: Update, context: CallbackContext):
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
             first_name = update.effective_user.full_name
-            update.effective_message.reply_photo(
+            update.effective_message.reply_video(
             random.choice(RUKA_N_IMG), caption= f"Hey {first_name}, Click the Button Below to get help of {module.capitalize()}",
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup([[
@@ -527,13 +527,13 @@ def get_help(update: Update, context: CallbackContext):
 
         first_name = update.effective_user.full_name
         first_nam = update.effective_user.id
-        update.effective_message.reply_photo(
+        update.effective_message.reply_video(
             random.choice(RUKA_N_IMG), caption= "Hey [{}](tg://user?id={}) Click the Button Below to get the list of possible commands.".format(first_name, first_nam),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Click here", url="https://t.me/RUKAxdbot?start=help")
+                  InlineKeyboardButton(text=" Click here", url="https://t.me/VermeilXRobot?start=help")
                   ]
                 ]
             ),
@@ -622,8 +622,8 @@ def settings_button(update: Update, context: CallbackContext):
             text = "*{}* has the following settings for the *{}* module:\n\n".format(escape_markdown(chat.title),
                                                                                      CHAT_SETTINGS[module].__mod_name__) + \
                    CHAT_SETTINGS[module].__chat_settings__(chat_id, user.id)
-            query.message.reply_photo(
-                photo=random.choice(PM_PHOTO),
+            query.message.reply_video(
+                video=random.choice(PM_PHOTO),
                 caption=text,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup([[
@@ -636,8 +636,8 @@ def settings_button(update: Update, context: CallbackContext):
             chat_id = prev_match.group(1)
             curr_page = int(prev_match.group(2))
             chat = bot.get_chat(chat_id)
-            query.message.reply_photo(
-                photo=random.choice(PM_PHOTO),
+            query.message.reply_video(
+                video=random.choice(PM_PHOTO),
                 caption="Hi there! There are quite a few settings for {} - go ahead and pick what you're interested in.".format(chat.title),
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(
@@ -647,8 +647,8 @@ def settings_button(update: Update, context: CallbackContext):
             chat_id = next_match.group(1)
             next_page = int(next_match.group(2))
             chat = bot.get_chat(chat_id)
-            query.message.reply_photo(
-                photo=random.choice(PM_PHOTO),
+            query.message.reply_video(
+                video=random.choice(PM_PHOTO),
                 caption="Hi there! There are quite a few settings for {} - go ahead and pick what you're interested in.".format(chat.title),
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(
@@ -657,8 +657,8 @@ def settings_button(update: Update, context: CallbackContext):
         elif back_match:
             chat_id = back_match.group(1)
             chat = bot.get_chat(chat_id)
-            query.message.reply_photo(
-                photo=random.choice(PM_PHOTO),
+            query.message.reply_video(
+                video=random.choice(PM_PHOTO),
                 caption="Hi there! There are quite a few settings for {} - go ahead and pick what you're interested in.".format(escape_markdown(chat.title)),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
@@ -689,7 +689,7 @@ def get_settings(update: Update, context: CallbackContext):
     if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
             text = "Click here to get this chat's settings, as well as yours."
-            msg.reply_photo(
+            msg.reply_video(
                 random.choice(RUKA_N_IMG), caption=text,
                 reply_markup=InlineKeyboardMarkup([[
                     InlineKeyboardButton(
@@ -760,13 +760,13 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             name = dispatcher.bot.first_name
-            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", RUKA_DISPACHER_PIC, caption=f"ᏦϴΝΝᏆᏟᎻᏆᏔᎪ !! (◍•ᴗ•◍)", parse_mode=ParseMode.MARKDOWN,
+            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", RUKA_DISPACHER_PIC, caption=f"I'm Online Again", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
                        InlineKeyboardButton(
                              text="Owner",
-                             url="https://t.me/ishikki_akabane")
+                             url="https://t.me/The0mnipotent")
                      ]
                 ]
             ),
@@ -788,7 +788,7 @@ def main():
     settings_callback_handler = CallbackQueryHandler(
         settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(RUKA_callback_data, pattern=r"RUKA_")
+    about_callback_handler = CallbackQueryHandler(RUKA_callback_data, pattern=r"VERMEIL_")
     RUKA_callback_handler = CallbackQueryHandler(about_callback_data, pattern=r"about_")
     repo_callback_handler = CallbackQueryHandler(repo_callback_data, pattern=r"repo_")
     donate_handler = CommandHandler("donate", donate)
@@ -802,7 +802,7 @@ def main():
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(about_callback_handler)
     dispatcher.add_handler(repo_callback_handler)
-    dispatcher.add_handler(RUKA_callback_handler)
+    dispatcher.add_handler(VERMEIL_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
     dispatcher.add_handler(migrate_handler)
     dispatcher.add_handler(donate_handler)
@@ -820,7 +820,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("RUKA Is Online")
+        LOGGER.info("VERMEIL Is Online")
         allowed_updates = ['message', 'edited_message', 'callback_query', 'callback_query', 'my_chat_member',
                            'chat_member', 'chat_join_request', 'channel_post', 'edited_channel_post', 'inline_query']
         updater.start_polling(
